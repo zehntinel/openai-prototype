@@ -22,3 +22,4 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 @app.get("/")
 def index(request: Request):
     return templates.TemplateResponse("index.html", {"request" : request})
+
